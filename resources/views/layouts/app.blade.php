@@ -14,8 +14,8 @@
     <main class="content">
         @yield('content')
     </main>
-    @include('layouts.footer')
-    @include('layouts.js')
+    {{-- @include('layouts.footer')
+    @include('layouts.js') --}}
 </body>
 
 </html>
