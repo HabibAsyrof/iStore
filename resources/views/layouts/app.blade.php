@@ -11,11 +11,11 @@
 
 <body>
     @include('layouts.navbar')
+    @include('layouts.ads')
     <main class="content">
         @yield('content')
     </main>
-    {{-- @include('layouts.footer')
-    @include('layouts.js') --}}
+    @include('layouts.js') 
 </body>
 
 </html>

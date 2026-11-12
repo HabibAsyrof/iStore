@@ -2,7 +2,7 @@
     <div class="lapisansatu">
         <div class="atas">
             <div class="brand">
-                <h1>digicell</h1>
+                <h1>iStore</h1>
                 <img src="asset/logo.png" alt="Logo">
             </div>
             <div class="search">
