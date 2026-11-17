@@ -13,6 +13,10 @@
                     <button type="submit">Cari</button>
                 </form>
             </div>
+            <div class="tukarTambah">
+                <i class="fa-regular fa-circle-up"></i>
+                <p>Tukar & Tambah</p>
+            </div>
             <div class="user">
                 <i class="fa-regular fa-user"></i>
             </div>

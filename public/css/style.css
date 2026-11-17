@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body,*,html{
+body,
+*,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav{
+/* navbar */
+nav {
     border-bottom: 1px solid #eeeeee;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
     width: 100%;
@@ -18,24 +22,24 @@ nav{
     align-items: center;
 }
 
-.lapisansatu{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+.lapisansatu {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.brand h1{
+.brand h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 40px;
     color: rgb(39, 39, 39);
 }
 
-.brand img{
+.brand img {
     width: 70px;
 }
 
-.brand{
+.brand {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,18 +47,19 @@ nav{
 }
 
 
-.product{
+.product {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
-.product ul{
+
+.product ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     width: 100%;
 }
 
-.product ul a{
+.product ul a {
     text-decoration: none;
     color: rgb(49, 49, 49);
     font-family: 'Inter', sans-serif;
@@ -116,8 +121,17 @@ nav{
     background: #444;
 }
 
-.atas .user{
+.atas .user {
     font-size: 20px;
+}
+
+.tukarTambah {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 
@@ -307,5 +321,66 @@ nav{
     .dot {
         width: 9px;
         height: 9px;
+    }
+}
+
+/* halaman utama */
+/* kategori */
+.kategori .kata{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.gallery-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: max-content;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
     }
 }

@@ -27,7 +27,7 @@
                 <!-- Slide 3 -->
                 <div class="slide">
                     <img
-                        src="{{ asset('images/banner-3.jpg') }}"
+                        src="{{ asset('asset/zaidjelek.jpeg') }}"
                         alt="iPad"
                     >
                 </div>
