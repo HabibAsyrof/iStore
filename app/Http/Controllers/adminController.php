@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\cr;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class adminController extends Controller
@@ -12,7 +13,8 @@ class adminController extends Controller
      */
     public function index()
     {
-        return view('dashboard.app');
+        $data = User::all();
+        return view('dashboard.CRUD.create', compact('data'));
     }
 
     /**
@@ -20,7 +22,7 @@ class adminController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.CRUD.create');
     }
 
     /**
@@ -34,32 +36,32 @@ class adminController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(cr $cr)
-    {
-        //
-    }
+    // public function show(cr $cr)
+    // {
+    //     //
+    // }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(cr $cr)
-    {
-        //
-    }
+    // /**
+    //  * Show the form for editing the specified resource.
+    //  */
+    // public function edit(cr $cr)
+    // {
+    //     //
+    // }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, cr $cr)
-    {
-        //
-    }
+    // /**
+    //  * Update the specified resource in storage.
+    //  */
+    // public function update(Request $request, cr $cr)
+    // {
+    //     //
+    // }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(cr $cr)
-    {
-        //
-    }
+    // /**
+    //  * Remove the specified resource from storage.
+    //  */
+    // public function destroy(cr $cr)
+    // {
+    //     //
+    // }
 }

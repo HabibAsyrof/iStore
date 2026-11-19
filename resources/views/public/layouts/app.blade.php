@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    @include('dashboard.css')
+    @include('public.layouts.css')
 </head>
+
 <body>
-    @include('dashboard.halaman_utama')
-    <main>
+    @include('public.layouts.navbar')
+    @include('public.layouts.ads')
+    <main class="content">
         @yield('content')
     </main>
-    @include('dashboard.js')
+    @include('public.layouts.js') 
 </body>
+
 </html>
